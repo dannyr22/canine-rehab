@@ -8,8 +8,8 @@ const Header = ({ siteTitle }) => (
   <header
     className={styles.header}
     style={{
-      background: `#BCBCBC`,
-      marginBottom: `1.45rem`,
+      // background: `#7CB778`,
+      marginBottom: `1rem`,
     }}
   >
     <div
@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.95rem 1.0875rem`,
       }}
     >
       <div className={styles.logoContainer}>
@@ -40,19 +40,32 @@ const Header = ({ siteTitle }) => (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link activeStyle={{ borderBottom: "2px solid white" }} to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link activeStyle={{ borderBottom: "2px solid white" }} to="/about">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/stories">Stories</Link>
+          <Link activeStyle={{ borderBottom: "2px solid white" }} to="/stories">
+            Stories
+          </Link>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <Link
+            activeStyle={{ borderBottom: "2px solid white" }}
+            to="/services"
+          >
+            Services
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link activeStyle={{ borderBottom: "2px solid white" }} to="/contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

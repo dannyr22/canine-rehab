@@ -1,0 +1,62 @@
+.pageContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-image {
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+.header-image img {
+  max-height: 650px;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main--about {
+  text-align: left;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.main--about_person {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main--about_person > div {
+  width: 45%;
+}
+
+.main--about_person:last-child {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.main--about_image-container {
+  /* width: 100px;
+  height: 100px; */
+}
+
+.main--about_image-container img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px rgb(34, 34, 34);
+}
+
+.main--about_person:last-child .main--about_image-container img {
+  box-shadow: -5px 5px 5px rgb(34, 34, 34);
+}

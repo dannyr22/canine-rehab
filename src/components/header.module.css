@@ -2,7 +2,7 @@
   display: flex;
   /* align-items: center; */
   vertical-align: middle;
-  max-height: 7rem;
+  max-height: 8rem;
 }
 
 .headerContent {
@@ -48,6 +48,13 @@
 
 .nav ul li {
   margin: 0px 8px;
+}
+
+.nav ul li a {
+  margin: 0px 8px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 @media (min-width: 968px) {
