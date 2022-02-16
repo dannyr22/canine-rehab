@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 const services = () => {
   return (
     <Layout>
-      <div>I am the services page</div>
+      <div className="pageContent services-page">I am the services</div>
     </Layout>
   )
 }

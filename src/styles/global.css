@@ -1,6 +1,18 @@
+/* Global --------------------------  */
+
+.main {
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+/* Homepage--------------------------  */
+
 .pageContent {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -8,6 +20,22 @@
 
 .header-image {
   /* overflow: hidden; */
+  width: 100%;
+}
+
+.homepage .swiper-container {
+  height: 40rem;
+  margin-bottom: 2rem;
+}
+
+.homepage .swiper-container > div {
+  height: 100%;
+}
+
+.homepage .swiper-container > div img {
+  object-position: center center;
+  object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
@@ -19,14 +47,8 @@
   object-position: center bottom;
 }
 
-.main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .main--about {
   text-align: left;
-  max-width: 1200px;
   width: 100%;
 }
 
@@ -59,4 +81,23 @@
 
 .main--about_person:last-child .main--about_image-container img {
   box-shadow: -5px 5px 5px rgb(34, 34, 34);
+}
+
+/* Stories --------------------------  */
+
+.stories-page .swiper-container {
+  /* height: 40rem; */
+  /* margin-bottom: 2rem; */
+  width: 80%;
+}
+
+.stories-page .swiper-container > div {
+  height: 100%;
+}
+
+.stories-page .swiper-container > div img {
+  object-position: center center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

@@ -45,11 +45,6 @@ const Header = ({ siteTitle }) => (
           </Link>
         </li>
         <li>
-          <Link activeStyle={{ borderBottom: "2px solid white" }} to="/about">
-            About
-          </Link>
-        </li>
-        <li>
           <Link activeStyle={{ borderBottom: "2px solid white" }} to="/stories">
             Stories
           </Link>
