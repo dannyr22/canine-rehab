@@ -3,8 +3,10 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "../styles/global.css"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
+import { Pagination, Autoplay } from "swiper"
 import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/autoplay"
 import dogsOne from "../images/dogs-1.jpg"
 import dogsTwo from "../images/dogs-2.jpg"
 import dogsThree from "../images/dogs-3.jpg"
@@ -19,21 +21,18 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      {/* <h1>K9-Rehabilitation</h1> */}
-      {/* <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p> */}
       <div className="pageContent homepage">
-        {/* <div className="header-image">
-        <img src={dogsOne} alt="dogs" />
-      </div> */}
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Autoplay, Pagination]}
           className="swiper-container"
           spaceBetween={50}
           slidesPerView={1}
-          // navigation
-          // pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={swiper => console.log(swiper)}
         >
@@ -51,8 +50,8 @@ const IndexPage = () => {
           </SwiperSlide>
           ...
         </Swiper>
-        <h1>K-9 Rehabilitation and Doggy Daycare</h1>
         <div className="main">
+          <h1>K-9 Rehabilitation and Doggy Daycare</h1>
           <div className="main--about">
             <h3>About Us</h3>
             <div className="main--about_person">
