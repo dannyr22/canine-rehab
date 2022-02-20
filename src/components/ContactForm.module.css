@@ -1,0 +1,24 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 700px;
+}
+
+.contactForm * {
+  margin: 0.5rem 0;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.contactForm button {
+  background: #fff;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.contactForm input {
+  padding: 0.5rem 0;
+}
