@@ -2,7 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import "../styles/global.css"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination, Autoplay } from "swiper"
 import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/autoplay"
 import dogsOne from "../images/dogs-1.jpg"
 
 const stories = () => {
@@ -17,9 +20,16 @@ const stories = () => {
             here, so check them out and let us know what you think!
           </div>
           <Swiper
+            modules={[Autoplay, Pagination]}
             className="swiper-container"
             spaceBetween={50}
             slidesPerView={3}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={swiper => console.log(swiper)}
           >
