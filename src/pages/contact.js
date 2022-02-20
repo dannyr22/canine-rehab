@@ -4,7 +4,14 @@ import Layout from "../components/layout"
 const contact = () => {
   return (
     <Layout>
-      <div className="pageContent contact-page">I am the contact page</div>
+      <div className="pageContent contact-page">
+        <h2 className="services-header">Get in touch</h2>
+        <div className="main">
+          <form>
+            <input />
+          </form>
+        </div>
+      </div>
     </Layout>
   )
 }
