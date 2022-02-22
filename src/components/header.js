@@ -7,17 +7,19 @@ import logo from "../images/k-nine-logo.png"
 const Header = ({ siteTitle }) => (
   <header
     className={styles.header}
-    style={{
-      // background: `#7CB778`,
-      marginBottom: `1rem`,
-    }}
+    style={
+      {
+        // background: `#7CB778`,
+        // marginBottom: `1rem`,
+      }
+    }
   >
     <div
       className={styles.headerContent}
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.95rem 1.0875rem`,
+        // padding: `1.95rem 1.0875rem`,
       }}
     >
       <div className={styles.logoContainer}>

@@ -37,7 +37,7 @@
 }
 
 .nav {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
@@ -57,7 +57,10 @@
   text-decoration: none;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
   .headerContent {
     flex-direction: row;
   }
@@ -65,3 +68,12 @@
     font-size: 3rem;
   }
 }
+
+/* @media (min-width: 968px) {
+  .headerContent {
+    flex-direction: row;
+  }
+  .headerTitle {
+    font-size: 3rem;
+  }
+} */

@@ -1,7 +1,7 @@
 /* Global --------------------------  */
 
 .main {
-  padding: 5rem 0;
+  padding: 2rem 0;
   margin: 2rem auto 0;
   display: flex;
   align-items: center;
@@ -14,6 +14,12 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 4rem 0;
+  }
 }
 /* Homepage--------------------------  */
 
@@ -31,8 +37,8 @@
 }
 
 .homepage .swiper-container {
-  height: 40rem;
-  margin-bottom: 2rem;
+  height: 20rem;
+  margin-bottom: 1rem;
 }
 
 .homepage .swiper-container > div {
@@ -55,21 +61,28 @@
 }
 
 .main--about {
-  text-align: left;
-  width: 100%;
+  /* text-align: left; */
+  width: 90%;
+  max-width: 1200px;
 }
 
 .main--about_person {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.main--about_bio {
+  text-align: center;
 }
 
 .main--about_person > div {
-  width: 45%;
+  width: 100%;
 }
 
 .main--about_person:last-child {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   text-align: right;
 }
 
@@ -90,6 +103,26 @@
   box-shadow: -5px 5px 5px rgb(34, 34, 34);
 }
 
+@media (min-width: 768px) {
+  .main--about_person {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .main--about_person:last-child {
+    flex-direction: row-reverse;
+  }
+  .main--about_person > div {
+    width: 45%;
+  }
+  .main--about {
+    text-align: left;
+    /* width: 100%; */
+  }
+  .homepage .swiper-container {
+    height: 40rem;
+    margin-bottom: 2rem;
+  }
+}
 /* Stories --------------------------  */
 
 .stories-page .swiper-container {
