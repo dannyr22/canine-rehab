@@ -100,7 +100,9 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="main--about_image-container">
-                <img src={martinImage} alt="martin" />
+                <div className="main--about_image-wrapper">
+                  <img src={martinImage} alt="martin" />
+                </div>
               </div>
             </div>
             <div className="main--about_person">
@@ -145,7 +147,9 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="main--about_image-container">
-                <img src={saphImage} alt="saph" />
+                <div className="main--about_image-wrapper">
+                  <img src={saphImage} alt="saph" />
+                </div>
               </div>
             </div>
           </div>
