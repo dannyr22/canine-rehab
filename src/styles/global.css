@@ -87,13 +87,19 @@
 }
 
 .main--about_image-container {
-  /* width: 100px;
-  height: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main--about_image-wrapper {
+  aspect-ratio: 1 / 1;
+  width: 80%;
 }
 
 .main--about_image-container img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 5px 5px 5px rgb(34, 34, 34);
@@ -121,6 +127,9 @@
   .homepage .swiper-container {
     height: 40rem;
     margin-bottom: 2rem;
+  }
+  .main--about_image-wrapper {
+    width: 100%;
   }
 }
 /* Stories --------------------------  */
