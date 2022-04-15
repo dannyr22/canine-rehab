@@ -3,23 +3,18 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import * as styles from "./header.module.css"
 import logo from "../images/k-nine-logo.png"
+import menuLogo from "../images/menuLogo.svg"
 
-const Header = ({ siteTitle }) => (
-  <header
-    className={styles.header}
-    style={
-      {
-        // background: `#7CB778`,
-        // marginBottom: `1rem`,
-      }
-    }
-  >
+const Header = ({ siteTitle, toggleMobileNav }) => (
+  <header className={styles.header}>
+    <div className={styles.mobileMenuIcon} onClick={toggleMobileNav}>
+      <img src={menuLogo} />
+    </div>
     <div
       className={styles.headerContent}
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        // padding: `1.95rem 1.0875rem`,
       }}
     >
       <div className={styles.logoContainer}>
