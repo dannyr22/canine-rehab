@@ -49,7 +49,7 @@ const IndexPage = () => {
             ...
           </Swiper>
           <div className="main">
-            <h1>K-9 Rehabilitation and Doggy Daycare</h1>
+            <h1>K-9 Rehabilitation</h1>
             <div className="main--about">
               <h3>About Us</h3>
               <div className="main--about_person">
